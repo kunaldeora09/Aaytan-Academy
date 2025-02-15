@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aaytan Academy</title>
+    
+        <!-- AOS CSS Animation Link -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+        <!-- CSS File -->
+        <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    
+        <!-- Responsive CSS File -->
+        <link rel="stylesheet" href="./Assets/CSS/media.css" />
+    
+        <!-- Fav Icon -->
+        <link
+          rel="shortcut icon"
+          href="./Assets/Image/Only Logo.jpeg"
+          type="image/x-icon"
+        />
+    
+        <!-- jQuery CDN Link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+        <!-- Font Awesome CDN Link -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+      
+    <style>
+        .test-info, .scholarship-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .registration-form {
+            background-color: #a00;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .scholarship-section {
+            background-color: #e44d26;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align items from left to right */
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+        .img-container {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0; /* Prevents image from shrinking */
+            margin-right: 20px; /* Creates space between image and text */
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .scholarship-text {
+            flex: 1; /* Takes up remaining space */
+            text-align: left; /* Ensures text is aligned to the left */
+        }
+        .scholarship-info {
+            background: #e74c3c;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: left;
+        }
+        .calculate-section {
+            margin: 20px 0;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 20%;
+            min-width: 120px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #a00;
+            color: white;
+            cursor: pointer;
+        }
+        .discount-criteria {
+            background: #eaeaea;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            margin-top: 150px;
+        }
+        .img-test{
+            margin: 5px;
+        }
+        .test-info {
+            background: #eaeaea;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            
+        }
+        .registration-form {
+            background: #a00;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .registration-form h2 {
+            color: black;
+        }
+        
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 45%;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ddd;
+            color: black;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav data-aos="fade-down">
+        <!-- Navbar -->
+        <div class="logoname">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+          </div>
+          <h1>Aaytan Academy</h1>
+        </div>
+        <!-- Nav Items -->
+        <div class="navitems">
+          <ul type="none">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop">
+              <a href="#"
+                >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+              ></a>
+              <ul class="dropshow" type="none">
+                
+                <li><a href="result.html">Result</a></li>
+                <li><a href="TestInfo.html">Test-info</a></li>
+                <li><a href="Scolorship.html">Scolorship</a></li>
+                <li><a href="DownloadMaterial.html">Download Materials</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="Testimonialpage.html">Testimonial</a></li>
+            <li><a href="FAQ Page.html">FAQ</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li id="bars"><i class="fa-solid fa-bars-staggered"></i></li>
+          </ul>
+        </div>
+  
+        <!-- Responsive Navbar -->
+        <div class="resnav">
+          <ul type="none">
+            <li><a href="#">Home</a></li>
+            <li class="resdrop">
+              <a href="#"
+                >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+              ></a>
+              <ul class="resdropshow" type="none">
+                <li><a href="result.html">Result</a></li>
+                <li><a href="TestInfo.html">Test-info</a></li>
+                <li><a href="Scolorship.html">Scolorship</a></li>
+                <li><a href="DownloadMaterial.html">Download Materials</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="Testimonialpage.html">Testimonial</a></li>
+            <li><a href="FAQ Page.html">FAQ</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <h2>Test Info</h2>
+        <section class="test-info">
+            
+            <p style="text-align: left; font-size: medium;">At Aaytan Academy, we conduct regular tests every <br> Sunday morning to analyze and enhance student performance. <br>
+                 These tests are meticulously designed to follow both objective <br>and subjective 
+                  paper patterns, ensuring students are well-prepared         for the diverse examination formats of various schools.</p>
+            <img src="Assets/Image/Aatyan Only Logo.png" alt="" class="img-test">
+        </section>
+        <section class="registration-form">
+            <h2 style="color: white;">Test Registration Form</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Standard" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Mobile Number" required>
+                <input type="text" placeholder="Location/Area" required>
+                <input type="datetime-local" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer data-aos="zoom-in">
+        <div class="foot">
+          <div>
+            <div style="display: flex">
+              <div class="footlogo">
+                <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+              </div>
+              <h2>Aaytan Academy</h2>
+            </div>
+            <p>Unlocking the World of Knowledge at Aaytan</p>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="FAQ Page.html">FAQ's</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">aaytanacademywebsite@gmail.com</a></li>
+            <li><a href="#">+91 84878 38799 <br>+91 79847 10300</a></li>
+          </ul>
+        </div>
+        <hr style="margin: 0 100px" />
+        <div class="footline">
+          <p><a href="#">@2025 Shridhar Infinity. All rights reserved.</a></p>
+          <p><a href="#">Cookies Setting</a></p>
+        </div>
+      </footer>
+
+
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- JS File -->
+     <script src="./Assets/JS/script.js"></script>
+
+     <!-- AOS JS Animation Link -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+   
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaytan Academy</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+
+    <!-- Responsive CSS File -->
+    <link rel="stylesheet" href="./Assets/CSS/media.css" />
+
+    <!-- Fav Icon -->
+    <link
+      rel="shortcut icon"
+      href="./Assets/Image/Only Logo.jpeg"
+      type="image/x-icon"
+    />
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+         header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    color: #a51c1c;
+    flex-wrap: wrap;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 150px;
+        }
+        h1 {
+            text-align: center;
+            color: #c0392b;
+        }
+        .faq {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .faq h3 {
+            cursor: pointer;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq p {
+            display: none;
+            margin-top: 5px;
+            color: #555;
+        }
+        .toggle {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+/* .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color:#627A95;
+    text-decoration: none;
+} */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h2 {
+    color: #a51c1c;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inline-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.inline-fields input {
+    width: 48%;
+}
+    </style>
+</head>
+<body>
+    <nav data-aos="fade-down">
+        <!-- Navbar -->
+        <div class="logoname">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+          </div>
+          <h1>Aaytan Academy</h1>
+        </div>
+        <!-- Nav Items -->
+        <div class="navitems">
+          <ul type="none">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop">
+              <a href="#"
+                >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+              ></a>
+              <ul class="dropshow" type="none">
+                
+                <li><a href="result.html">Result</a></li>
+                <li><a href="TestInfo.html">Test-info</a></li>
+                <li><a href="Scolorship.html">Scolorship</a></li>
+                <li><a href="DownloadMaterial.html">Download Materials</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="Testimonialpage.html">Testimonial</a></li>
+            <li><a href="FAQ Page.html">FAQ</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li id="bars"><i class="fa-solid fa-bars-staggered"></i></li>
+          </ul>
+        </div>
+  
+        <!-- Responsive Navbar -->
+        <div class="resnav">
+          <ul type="none">
+            <li><a href="#">Home</a></li>
+            <li class="resdrop">
+              <a href="#"
+                >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+              ></a>
+              <ul class="resdropshow" type="none">
+                <li><a href="result.html">Result</a></li>
+                <li><a href="TestInfo.html">Test-info</a></li>
+                <li><a href="Scolorship.html">Scolorship</a></li>
+                <li><a href="DownloadMaterial.html">Download Materials</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="Testimonialpage.html">Testimonial</a></li>
+            <li><a href="FAQ Page.html">FAQ</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+    <div class="container">
+        <h1>FAQ'S</h1>
+        
+        <div class="faq">
+            <h3>What courses does your academy offer? <span class="toggle">+</span></h3>
+            <p>We offer a wide range of courses, including academic subjects, professional development programs, certification training, and skill-based workshops.</p>
+        </div>
+        
+        <div class="faq">
+            <h3>Are the courses online, in-person, or both? <span class="toggle">+</span></h3>
+            <p>Our courses are available in online, in-person, and hybrid formats to suit different learning preferences.</p>
+        </div>
+        
+        <div class="faq">
+            <h3>Do you provide study materials for courses? <span class="toggle">+</span></h3>
+            <p>Yes, we provide study materials, including lecture notes, reference guides, and access to online resources for most courses.</p>
+        </div>
+    </div>
+    <footer data-aos="zoom-in">
+        <div class="foot">
+          <div>
+            <div style="display: flex">
+              <div class="footlogo">
+                <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+              </div>
+              <h2>Aaytan Academy</h2>
+            </div>
+            <p>Unlocking the World of Knowledge at Aaytan</p>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="FAQ Page.html">FAQ's</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">aaytanacademywebsite@gmail.com</a></li>
+            <li><a href="#">+91 84878 38799 <br>+91 79847 10300</a></li>
+          </ul>
+        </div>
+        <hr style="margin: 0 100px" />
+        <div class="footline">
+          <p><a href="#">@2025 Shridhar Infinity. All rights reserved.</a></p>
+          <p><a href="#">Cookies Setting</a></p>
+        </div>
+      </footer>
+    <script>
+        document.querySelectorAll('.faq h3').forEach(item => {
+            item.addEventListener('click', () => {
+                let content = item.nextElementSibling;
+                let toggleSign = item.querySelector('.toggle');
+                
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    toggleSign.textContent = "+";
+                } else {
+                    content.style.display = "block";
+                    toggleSign.textContent = "-";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

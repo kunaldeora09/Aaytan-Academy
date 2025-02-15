@@ -1,0 +1,133 @@
+@media only screen and (max-width: 875.98px) {
+  .headercolor {
+    padding: 0 0 0 30px;
+  }
+
+  .linescolor {
+    padding: 0 0 0 30px;
+  }
+
+  .courses {
+    margin-left: 30px;
+  }
+
+  .imgheader {
+    height: 380px;
+  }
+
+  .whatdocolor {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  #bars {
+    display: inline;
+    margin-top: 88%;
+    font-size: 20px;
+  }
+
+  .navitems ul li {
+    display: none;
+  }
+
+  .headercolor {
+    font-size: 45px;
+  }
+
+  .linescolor {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 701.98px) {
+  .courses {
+    margin: 0 0 30px 30px;
+  }
+
+  .imgheader {
+    height: 280px;
+  }
+
+  .headercolor {
+    font-size: 40px;
+  }
+
+  .linescolor {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 667.98px) {
+  .header {
+    display: block;
+    padding: 5px;
+  }
+
+  .courses {
+    font-size: 15px;
+  }
+
+  .imgheader {
+    height: 400px;
+    margin: 40px auto;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+}
+
+@media only screen and (max-width: 460.98px) {
+  .headercolor {
+    font-size: 35px;
+  }
+
+  .linescolor {
+    font-size: 17px;
+  }
+
+  .courses {
+    font-size: 12px;
+  }
+
+  .header {
+    margin: 110px 30px;
+  }
+
+  .logoname h1 {
+    font-size: 22px;
+    margin-top: 15%;
+  }
+
+  .logo {
+    width: 60px;
+    height: 55px;
+  }
+
+  .imgheader {
+    margin: 40px auto;
+    width: 250px;
+    height: 370px;
+  }
+
+  .whatdo {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 360.98px) {
+  .headercolor {
+    font-size: 28px;
+  }
+  .linescolor {
+    font-size: 14px;
+  }
+
+  .header {
+    margin: 110px 5px;
+  }
+
+  .courses {
+    font-size: 10px;
+  }
+}

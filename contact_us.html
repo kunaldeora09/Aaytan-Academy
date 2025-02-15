@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaytan Academy</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+
+    <!-- Responsive CSS File -->
+    <link rel="stylesheet" href="./Assets/CSS/media.css" />
+
+    <!-- Fav Icon -->
+    <link
+      rel="shortcut icon"
+      href="./Assets/Image/Aatyan Only Logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        /* General Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+} */
+
+/* Header */
+ /* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    color: #a51c1c;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color:#627A95;
+    text-decoration: none;
+}
+
+.btn {
+    background: white;
+    color: #a51c1c;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+} */
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: white;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h2 {
+    color: #a51c1c;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inline-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.inline-fields input {
+    width: 48%;
+}
+
+button {
+    background: #a51c1c;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Map Section */
+.map {
+    width: 45%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+/* Footer */
+/* footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links,
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-links a,
+.footer-info a {
+    color: white;
+    text-decoration: none;
+} */
+
+/* ======= Responsive Design ======= */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .map {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .inline-fields {
+        flex-direction: column;
+    }
+
+    .inline-fields input {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav data-aos="fade-down">
+            <!-- Navbar -->
+            <div class="logoname">
+              <!-- Logo -->
+              <div class="logo">
+                <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+              </div>
+              <h1>Aaytan Academy</h1>
+            </div>
+            <!-- Nav Items -->
+            <div class="navitems">
+              <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <li class="drop">
+                  <a href="#"
+                    >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+                  ></a>
+                  <ul class="dropshow" type="none">
+                    
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="TestInfo.html">Test-info</a></li>
+                    <li><a href="Scolorship.html">Scolorship</a></li>
+                    <li><a href="DownloadMaterial.html">Download Materials</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="Testimonialpage.html">Testimonial</a></li>
+                <li><a href="FAQ Page.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li id="bars"><i class="fa-solid fa-bars-staggered"></i></li>
+              </ul>
+            </div>
+      
+            <!-- Responsive Navbar -->
+            <div class="resnav">
+              <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li class="resdrop">
+                  <a href="#"
+                    >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+                  ></a>
+                  <ul class="resdropshow" type="none">
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="TestInfo.html">Test-info</a></li>
+                    <li><a href="Scolorship.html">Scolorship</a></li>
+                    <li><a href="DownloadMaterial.html">Download Materials</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="Testimonialpage.html">Testimonial</a></li>
+                <li><a href="FAQ Page.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-form">
+                <h2>CONTACT US</h2>
+                <p>We’d love to hear from you! At Aaytan academy, we’re here to assist with any questions or inquiries. Whether you need information or support, don’t hesitate to reach out!.</p>
+                <form>
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    <div class="inline-fields">
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                    </div>
+                    <textarea name="message" placeholder="Get in touch with us today"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <p>Have any questions? Feel free to reach out via email at <strong>aaytanacademywebsite.com</strong></p>
+                <p>Stay connected with us on social media! Follow Aaytan academy for updates, news, and more</p>
+                <div class="social-links">
+                    <a href="#"><img src="Assets/Image/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="Assets/Image/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="Assets/Image/twitter-alt-circle.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.03741629662!2d72.65956667430407!3d23.095726113596214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e81a4d074be5f%3A0xb3b71b682a81c725!2sAaytan%20Academy!5e0!3m2!1sen!2sin!4v1738935893517!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer data-aos="zoom-in">
+        <div class="foot">
+          <div>
+            <div style="display: flex">
+              <div class="footlogo">
+                <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+              </div>
+              <h2>Aaytan Academy</h2>
+            </div>
+            <p>Unlocking the World of Knowledge at Aatyan</p>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="FAQ Page.html">FAQ's</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">aaytanacademywebsite@gmail.com</a></li>
+            <li><a href="#">+91 84878 38799 <br>+91 79847 10300</a></li>
+          </ul>
+        </div>
+        <hr style="margin: 0 100px" />
+        <div class="footline">
+          <p><a href="#">@2025 Shridhar Infinity. All rights reserved.</a></p>
+          <p><a href="#">Cookies Setting</a></p>
+        </div>
+      </footer>
+
+</body>
+</html>
+
+
