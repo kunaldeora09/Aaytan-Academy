@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aaytan Academy</title>
@@ -8,11 +9,11 @@
     <!-- AOS CSS Animation Link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+       <!-- CSS File -->
+       <link rel="stylesheet" href="style.css" />
 
-    <!-- Responsive CSS File -->
-    <link rel="stylesheet" href="./Assets/CSS/media.css" />
+       <!-- Responsive CSS File -->
+       <link rel="stylesheet" href="media.css" />
 
     <!-- Fav Icon -->
     <link
@@ -32,93 +33,97 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
-  <body>
-    <nav data-aos="fade-down">
-      <!-- Navbar -->
-      <div class="logoname">
-        <!-- Logo -->
-        <div class="logo">
-          <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
-        </div>
-        <h1>Aaytan Academy</h1>
-      </div>
-      <!-- Nav Items -->
-      <div class="navitems">
-        <ul type="none">
-          <li><a href="index.html">Home</a></li>
-          <li class="drop">
-            <a href="#"
-              >Student <i class="fa-solid fa-angle-down fa-bounce"></i
-            ></a>
-            <ul class="dropshow" type="none">
-              <li><a href="result.html">Result</a></li>
-              <li><a href="TestInfo.html">Test-info</a></li>
-              <li><a href="Scolorship.html">Scolorship</a></li>
-              <li><a href="DownloadMaterial.html">Download Materials</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="Testimonialpage.html">Testimonial</a></li>
-          <li><a href="FAQ Page.html">FAQ</a></li>
-          <li><a href="contact_us.html">Contact Us</a></li>
-          <li id="bars"><i class="fa-solid fa-bars-staggered"></i></li>
-        </ul>
-      </div>
+    <style>
+ .try-now {
+    background-color: #9c1515;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none; /* Removes underline from link */
+    display: inline-block;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+    text-align: center;
+}
 
-      <!-- Responsive Navbar -->
-      <div class="resnav">
-        <ul type="none">
-          <li><a href="#">Home</a></li>
-          <li class="resdrop">
-            <a href="#"
-              >Student <i class="fa-solid fa-angle-down fa-bounce"></i
-            ></a>
-            <ul class="resdropshow" type="none">
-              <li><a href="result.html">Result</a></li>
-              <li><a href="TestInfo.html">Test-info</a></li>
-              <li><a href="Scolorship.html">Scolorship</a></li>
-              <li><a href="DownloadMaterial.html">Download Materials</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="Testimonialpage.html">Testimonial</a></li>
-          <li><a href="FAQ Page.html">FAQ</a></li>
-          <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
+.try-now:hover {
+    transform: scale(1.1);
+    background-color: darkred;
+}
+
+
+    </style>
+</head>
+<body>
+  <nav data-aos="fade-down">
+    <!-- Navbar -->
+    <div class="logoname">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
       </div>
-    </nav>
-    <!-- <iframe
-      src="https://script.google.com/macros/s/AKfycbwyOorDVMRC0cTDbb8MYuuy8HeI_ZDftjs1JeZlwIT86zrguvFs8I5ZPZvqtUwQB160iA/exec"
-      frameborder="0"
-      style="margin-top: 150px"
-    ></iframe> -->
+      <h1>Aaytan Academy</h1>
+    </div>
+    <!-- Nav Items -->
+    <div class="navitems">
+      <ul type="none">
+        <li><a href="index.html">Home</a></li>
+        <li class="drop">
+          <a href="#"
+            >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+          ></a>
+          <ul class="dropshow" type="none">
+            
+            <li><a href="result.html">Result</a></li>
+            <li><a href="TestInfo.html">Test-info</a></li>
+            <li><a href="Scolorship.html">Scolorship</a></li>
+            <li><a href="DownloadMaterial.html">Download Materials</a></li>
+          </ul>
+        </li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="Testimonialpage.html">Testimonial</a></li>
+        <li><a href="FAQ Page.html">FAQ</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li id="bars"><i class="fa-solid fa-bars-staggered"></i></li>
+      </ul>
+    </div>
 
-    <a
-      style="
-        margin-top: 150px;
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        padding: 7px 17px;
-        background-color: #9c1515;
-        border-radius: 5px;
-      "
-      target="_blank"
-      href="https://script.google.com/macros/s/AKfycbwyOorDVMRC0cTDbb8MYuuy8HeI_ZDftjs1JeZlwIT86zrguvFs8I5ZPZvqtUwQB160iA/exec"
-      >Check Result</a
-    >
-
+    <!-- Responsive Navbar -->
+    <div class="resnav">
+      <ul type="none">
+        <li><a href="#">Home</a></li>
+        <li class="resdrop">
+          <a href="#"
+            >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+          ></a>
+          <ul class="resdropshow" type="none">
+            <li><a href="result.html">Result</a></li>
+            <li><a href="TestInfo.html">Test-info</a></li>
+            <li><a href="Scolorship.html">Scolorship</a></li>
+            <li><a href="DownloadMaterial.html">Download Materials</a></li>
+          </ul>
+        </li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="Testimonialpage.html">Testimonial</a></li>
+        <li><a href="FAQ Page.html">FAQ</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- <iframe src="https://script.google.com/macros/s/AKfycbyBScKG_Y8L9nGDOnDiqq-dhz7qxO6NNkn5eopxzpa59G162i3yW5-wyAxo_i2ZENsbVQ/exec" frameborder="0" style="margin-top: 150px;"></iframe> -->
+    <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+      <a href="https://script.google.com/macros/s/AKfycbyBScKG_Y8L9nGDOnDiqq-dhz7qxO6NNkn5eopxzpa59G162i3yW5-wyAxo_i2ZENsbVQ/exec" 
+         class="try-now">Check Result</a>
+    </div>
+    
+    
     <footer data-aos="zoom-in">
       <div class="foot">
         <div>
           <div style="display: flex">
             <div class="footlogo">
-              <img
-                src="./Assets/Image/Only Logo.jpeg"
-                width="100%"
-                alt="logo"
-              />
+              <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
             </div>
             <h2>Aaytan Academy</h2>
           </div>
@@ -135,9 +140,7 @@
         </ul>
         <ul>
           <li><a href="#">aaytanacademywebsite@gmail.com</a></li>
-          <li>
-            <a href="#">+91 84878 38799 <br />+91 79847 10300</a>
-          </li>
+          <li><a href="#">+91 84878 38799 <br>+91 79847 10300</a></li>
         </ul>
       </div>
       <hr style="margin: 0 100px" />

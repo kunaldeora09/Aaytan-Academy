@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaytan Academy</title>
+     <!-- AOS CSS Animation Link -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+     <!-- CSS File -->
+     <link rel="stylesheet" href="style.css" />
+ 
+     <!-- Responsive CSS File -->
+     <link rel="stylesheet" href="media.css" />
+ 
+     <!-- Fav Icon -->
+     <link
+       rel="shortcut icon"
+       href="./Assets/Image/Only Logo.jpeg"
+       type="image/x-icon"
+     />
+ 
+     <!-- jQuery CDN Link -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+     <!-- Font Awesome CDN Link -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Sign Up Button */
+.signup-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px; /* Space between links and button */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 45%;
+    margin-left: 20px;
+}
+
+.hero-image img {
+    width: 110%;
+    max-width: 600px;
+}
+
+.try-now {
+    background-color: #9c1515;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.try-now:hover {
+    transform: scale(1.1);
+    background-color: darkred;
+}
+
+.news-blog {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+}
+
+.news, .blog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    text-align: center;
+}
+
+.news i, .blog i {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.news h3, .blog h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.courses-ranking {
+    margin-top: 40px;
+    text-align: center; /* Ensures all content inside is centered */
+}
+
+.courses-ranking h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center; /* Centers the heading */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+.courses-ranking p {
+    font-size: 1.2em;
+    margin: 15px auto;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Search Bar */
+.search-box {
+    position: relative;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 1em;
+    padding-left: 15px;
+}
+
+.search-box button {
+    position: absolute;
+    right: -25px; 
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    background-color: #BA605F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.search-box button:hover {
+    background-color: #a04f4e;
+}
+
+/* Top Courses Buttons */
+.top-courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.course-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.course-btn:hover {
+    background-color: #555;
+}
+
+/* Class & Exam Buttons */
+.grade-buttons, .exam-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grade-btn {
+    background-color: grey;
+    color: black;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.grade-btn:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* .grade, .exam {
+    background: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grade.active {
+    background: black;
+    color: white;
+} */
+
+.curriculum {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.subjects {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+.subjects h2 {
+    text-align: left;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chapter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chapter-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.chapter-list li:last-child {
+    border-bottom: none;
+}
+
+.chapter-list span {
+    font-size: 16px;
+    color: #222;
+}
+
+.chapter-list a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.chapter-list a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav data-aos="fade-down">
+            <!-- Navbar -->
+            <div class="logoname">
+              <!-- Logo -->
+              <div class="logo">
+                <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+              </div>
+              <h1>Aaytan Academy</h1>
+            </div>
+            <!-- Nav Items -->
+            <div class="navitems">
+              <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <li class="drop">
+                  <a href="#"
+                    >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+                  ></a>
+                  <ul class="dropshow" type="none">
+                    
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="TestInfo.html">Test-info</a></li>
+                    <li><a href="Scolorship.html">Scolorship</a></li>
+                    <li><a href="DownloadMaterial.html">Download Materials</a></li>
+                  </ul>
+                </li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="Testimonialpage.html">Testimonial</a></li>
+                <li><a href="FAQ Page.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li id="bars"><i class="fa-solid fa-bars-staggered"></i></li>
+              </ul>
+            </div>
+      
+            <!-- Responsive Navbar -->
+            <div class="resnav">
+              <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <li class="resdrop">
+                  <a href="#"
+                    >Student <i class="fa-solid fa-angle-down fa-bounce"></i
+                  ></a>
+                  <ul class="resdropshow" type="none">
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="TestInfo.html">Test-info</a></li>
+                    <li><a href="Scolorship.html">Scolorship</a></li>
+                    <li><a href="DownloadMaterial.html">Download Materials</a></li>
+                  </ul>
+                </li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="Testimonialpage.html">Testimonial</a></li>
+                <li><a href="FAQ Page.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>JOIN </h1>
+            <h1>Aaytan</h1>
+            <p>
+                Join Our Aaytan Academy to get the best education and make your future bright. With Most Experienced Faculty of Nana Chiloda.
+            </p>
+            <button class="try-now">Enroll Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="/Assets//Image/image1.jpg" alt="Study Image">
+        </div>
+    </section>
+
+    <!-- <section class="news-blog">
+        <div class="news-item">
+            <img src="image-removebg-preview (1).png" alt="News Icon">
+            <h2>NEWS</h2>
+            <p>Millions enroll in digital courses amid growing demand for remote learning.</p>
+        </div>
+        <div class="news-item">
+            <img src="image-removebg-preview.png" alt="Blog Icon">
+            <h2>BLOG</h2>
+            <p>Is online learning the future? Discover how virtual classrooms are transforming education.</p>
+        </div>
+    </section> -->
+    <section class="news-blog">
+        <div class="news">
+            <img src="/Assets/Image/image-removebg-preview (1).png" alt="News Icon">
+            <h3>NEWS</h3>
+            <p>Modern digital education...</p>
+        </div>
+        <div class="blog">
+            <img src="/Assets/Image/image-removebg-preview.png" alt="Blog Icon">
+            <h3>BLOG</h3>
+            <p>Explore new learning techniques...</p>
+        </div>
+    </section>
+
+    <section class="courses-ranking">
+        <h2 >WE RANK THE BEST COURSES ON THE WEB</h2>
+        <p>In the history of modern astronomy, there is probably no one greater leap forward than the building <br> and launch of the space telescope.</p>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Search Courses...">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <div class="top-courses">
+            <button class="course-btn">Course 1</button>
+            <button class="course-btn">Course 2</button>
+            <button class="course-btn">Course 3</button>
+        </div>
+        <div class="top-courses">
+            <button class="course-btn">Course 4</button>
+            <button class="course-btn">Course 5</button>
+        </div>
+
+        <div class="grade-buttons">
+            <button class="grade-btn">9th</button>
+            <button class="grade-btn">10th</button>
+            <button class="grade-btn">11th</button>
+        </div>
+
+        <div class="exam-buttons">
+            <button class="grade-btn">NEET</button>
+            <button class="grade-btn">JEE</button>
+        </div>
+    </section>
+
+
+    <section class="curriculum">
+        <p>The 10th-grade curriculum is a crucial stage in a student's academic journey, building upon foundational concepts while preparing for higher education and career paths. This year focuses on strengthening core subjects like Mathematics, Science, Social Studies, and Language Arts, alongside skill development in technology, critical thinking, and problem-solving.</p>
+    </section>
+
+    <section class="subjects">
+        <h2>Mathematics</h2>
+        <ul class="chapter-list">
+            <li>
+                <span>1. Real Numbers</span>
+                <a href="real-numbers.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>2. Polynomials</span>
+                <a href="polynomials.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>3. Pair of Linear Equations in Two Variables</span>
+                <a href="linear-equations.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>4. Quadratic Equations</span>
+                <a href="quadratic-equations.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>5. Arithmetic Progressions</span>
+                <a href="arithmetic-progressions.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>6. Triangles</span>
+                <a href="triangles.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>7. Coordinate Geometry</span>
+                <a href="coordinate-geometry.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>8. Introduction to Trigonometry</span>
+                <a href="trigonometry.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>9. Some Applications of Trigonometry</span>
+                <a href="applications-trigonometry.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>10. Circles</span>
+                <a href="circles.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>11. Constructions</span>
+                <a href="constructions.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>12. Areas Related to Circles</span>
+                <a href="areas-circles.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>13. Surface Areas and Volumes</span>
+                <a href="surface-areas-volumes.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>14. Statistics</span>
+                <a href="statistics.pdf" download>Download PDF</a>
+            </li>
+            <li>
+                <span>15. Probability</span>
+                <a href="probability.pdf" download>Download PDF</a>
+            </li>
+        </ul>
+    </section>
+    
+    <footer data-aos="zoom-in">
+        <div class="foot">
+          <div>
+            <div style="display: flex">
+              <div class="footlogo">
+                <img src="./Assets/Image/Only Logo.jpeg" width="100%" alt="logo" />
+              </div>
+              <h2>Aaytan Academy</h2>
+            </div>
+            <p>Unlocking the World of Knowledge at Aaytan</p>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="FAQ Page.html">FAQ's</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">aaytanacademywebsite@gmail.com</a></li>
+            <li><a href="#">+91 84878 38799 <br>+91 79847 10300</a></li>
+          </ul>
+        </div>
+        <hr style="margin: 0 100px" />
+        <div class="footline">
+          <p><a href="#">@2025 Shridhar Infinity. All rights reserved.</a></p>
+          <p><a href="#">Cookies Setting</a></p>
+        </div>
+      </footer>
+    <!-- JS File -->
+    <script src="./Assets/JS/script.js"></script>
+
+    <!-- AOS JS Animation Link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
